@@ -1,5 +1,3 @@
-print("advent of neovim")
-
 require("config.lazy")
 
 vim.opt.shiftwidth = 4
