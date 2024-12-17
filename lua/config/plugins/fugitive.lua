@@ -6,6 +6,8 @@ return {
 
 		local my_fugitive = vim.api.nvim_create_augroup("my_fugitive", {})
 
+		vim.keymap.set("n", "gu", "<cmd>diffget //2<CR>")
+		vim.keymap.set("n", "gh", "<cmd>diffget //3<CR>")
 		local autocmd = vim.api.nvim_create_autocmd
 
 		autocmd("BufWinEnter", {
