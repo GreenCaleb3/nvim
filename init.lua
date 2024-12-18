@@ -16,10 +16,11 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+--vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "-", "<cmd>Oil<CR>")
+vim.keymap.set("n", "<leader>pv", "<cmd>Oil<CR>")
 
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
-
 
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
